@@ -1,13 +1,18 @@
 from rest_framework.serializers import ModelSerializer
 
 from core.models import Categoria, Editora, Livro
+from core.serializers import (
+    LivroListSerializer,
+    LivroRetrieveSerializer,
+    LivroSerializer,
+)
 
-class LivroSerializer(ModelSerializer):
+class LivroListSerializer(ModelSerializer):
     class Meta:
         model = Livro
-        fields = "__all__"
+        fields = ("id", "titulo", "preco")
 
-class LivroListRetrieveSerializer(ModelSerializer):
+class LivroRetrieveSerializer(ModelSerializer):
     class Meta:
         model = Livro
         fields = "__all__"
