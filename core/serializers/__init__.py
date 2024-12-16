@@ -7,8 +7,12 @@ from .livro import (
     LivroRetrieveSerializer,
     LivroSerializer,
 )
+
 from .compra import (
-    CompraSerializer, 
+    CompraListSerializer, # novo
+    CompraCreateUpdateSerializer,
+    CompraSerializer,
+    ItensCompraCreateUpdateSerializer,
+    ItensCompraListSerializer, # novo
     ItensCompraSerializer,
-    CompraCreateUpdateSerializer
-) 
+)
