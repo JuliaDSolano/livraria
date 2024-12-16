@@ -13,7 +13,6 @@ dependencies = [
     'djangorestframework>=3.14.0',
     'drf-spectacular>=0.26.5',
     'gunicorn>=21.2.0',
-    'mysqlclient>=2.2.4',
     'netifaces>=0.11.0',
     'passage-identity>=2.5.1',
     'Pillow>=10.3.0',
@@ -42,7 +41,7 @@ filename = "requirements.txt"
 without-hashes = "true"
 
 [tool.pdm.scripts]
-pre_dev = "python ./scripts/set_my_ip.py"
+#pre_dev = "python ./scripts/set_my_ip.py"
 dev = "python manage.py runserver 0.0.0.0:19003"
 createsuperuser = "python manage.py createsuperuser"
 pre_migrate = "python manage.py makemigrations"
