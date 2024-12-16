@@ -9,5 +9,6 @@ from .livro import (
 )
 from .compra import (
     CompraSerializer, 
-    ItensCompraSerializer
+    ItensCompraSerializer,
+    CompraCreateUpdateSerializer
 ) 
