@@ -7,3 +7,4 @@ from .livro import (
     LivroRetrieveSerializer,
     LivroSerializer,
 )
+from .compra import CompraSerializer
