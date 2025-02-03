@@ -1,5 +1,12 @@
 {
+<<<<<<< HEAD
   "python.analysis.extraPaths": ["${workspaceFolder}/__pypackages__/3.12/lib"],
+=======
+  "python.analysis.extraPaths": [
+    "${workspaceFolder}/__pypackages__/3.10/lib",
+    "./__pypackages__/3.12/lib"
+  ],
+>>>>>>> 7519c77 (error: erro no passage id)
   "python.autoComplete.extraPaths": [
     "${workspaceFolder}/__pypackages__/3.12/lib"
   ],

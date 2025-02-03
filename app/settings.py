@@ -147,8 +147,11 @@ REST_FRAMEWORK = {
     "PAGE_SIZE": 10,
 }
 
-PASSAGE_APP_ID = os.getenv("PASSAGE_APP_ID", "app_id")
-PASSAGE_API_KEY = os.getenv("PASSAGE_API_KEY", "api_key")
+PASSAGE_APP_ID = os.getenv("LrJkcWZYybooMkaHnIWk4dfo", "app_id")
+PASSAGE_API_KEY = os.getenv("Rtd1D0fLbn.6KF0dCJzkaARRlSO1M2Nqc6Z4iH75EDY1zs9svS3XdxgmHa9XUOq0R2aLtTN6VFy", "api_key")
+
+print(f"PASSAGE_APP_ID: {PASSAGE_APP_ID}")  # Para verificar se está correto
+
 PASSAGE_AUTH_STRATEGY = 2
 
 print(f"{MODE = } \n{MEDIA_URL = } \n{DATABASES = }")
