@@ -18,3 +18,5 @@ from .compra import (
     ItensCompraListSerializer,
     ItensCompraSerializer,
 )
+from .favoritos import (FavoritoSerializer)
+from .review import (ReviewSerializer)

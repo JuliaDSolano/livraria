@@ -15,10 +15,16 @@ from core.views import (
     CategoriaViewSet,
     EditoraViewSet,
     LivroViewSet,
+    ReviewViewSet,
     UserViewSet,
-    CompraViewSet
+    CompraViewSet,
+    FavoritoViewSet,
+    ReviewViewSet
 )
 from uploader.router import router as uploader_router
+
+from django.urls import path, include
+from rest_framework.routers import DefaultRouter
 
 router = DefaultRouter()
 router.register(r"autores", AutorViewSet, basename="autores")
@@ -27,6 +33,8 @@ router.register(r"editoras", EditoraViewSet, basename="editoras")
 router.register(r"livros", LivroViewSet, basename="livros")
 router.register(r"usuarios", UserViewSet, basename="usuarios")
 router.register(r"compras", CompraViewSet)
+router.register(r'favorites', FavoritoViewSet)
+router.register(r'review', ReviewViewSet)
 
 urlpatterns = [
     path("admin/", admin.site.urls),
